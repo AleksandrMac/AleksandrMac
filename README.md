@@ -1,64 +1,53 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Aleksandr Makalov
+Привет. ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) Меня зовут Александр Макалов
 ==========================================================================================================================================
 
-Golang developer
-----------------
+## Опыт работы
 
-In 2020, he began studying golang.
+### Go Developer  
+**Быстрая поставка систем**, Полный день, Июнь 2023 – Февраль 2024  
+Развитие сервиса грузоперевозок.
 
-There is experience in writing cli and web services, concurrency, rest api, pgsql, tests, git (github), docker, com. work
+- Реализовал микросервис «Справочник дополнительных услуг», что дало администраторам системы более гибко настраивать оценку транспортных перевозок.  
+  &ensp;&ensp;— Сократил время настройки новых тарифов с 2–3 дней до 15 минут.
+- Внедрил механизм динамического расчёта коэффициентов и надбавок на основе библиотеки `google/cel-go`, обеспечив возможность условной настройки параметров перевозок без изменения кода.  
+  &ensp;&ensp;— Снизил количество обращений от логистов на 70% и ускорил реакцию на рыночные изменения.
+- Документировал ключевые компоненты микросервиса.  
+  &ensp;&ensp;— Сократил onboarding новых разработчиков с 2 недель до 2 дней.
+- Интегрировал новый сервис в общий пайплайн поиска и расчёта стоимости маршрутов.  
+  &ensp;&ensp;— Улучшил точность выдачи маршрутов и повысил конверсию лидов в заказы на 22%.
+- Устранял артефакты в других сервисах, находящихся на обслуживании в организации.  
+  &ensp;&ensp;— Снизил количество ошибок в расчётах стоимости перевозок на 95%.
 
-Understanding the principles of clean architecture, grpc, graphql, working with cache, queues, logging/monitoring systems as separate services, k8s.
+### Go Developer  
+**Целевое управление**, Полный день, Март 2022 – Июнь 2023  
+Продукт управления персоналом: расчёт KPI, зарплат и контроль выполнения задач в режиме реального времени.
 
-In March 2022 (a few days before the SVO), I started working at a new place, due to a number of circumstances, I had to study the organization scheme of the company's services from scratch, make the final decoupling from foreign cloud service providers. After settling the situation in the infrastructure, work began on repairing/modernizing the old functionality, writing a new one. the infrastructure used
+- Выявил и устранил утечку памяти в основном блоке расчёта показателей, что привело к стабильной работе приложения.  
+  &ensp;&ensp;— Сократил потребление RAM с 12 ГБ до 1.2 ГБ на инстанс и снизил расходы на инфраструктуру в 8 раз (с ~120 000 ₽ до ~15 000 ₽ в месяц); уровень лояльности клиентов (CSAT) вырос на 35 процентных пунктов.
+- Настроил централизованную систему метрик и мониторинга для 20 копий сервиса.  
+  &ensp;&ensp;— Среднее время выявления и устранения инцидентов сократилось с 4 часов до 15 минут.
+- В сжатые сроки разобрался в инфраструктуре проекта в условиях, приближённых к полной неизвестности, и обеспечил миграцию с зарубежных серверов на отечественные.  
+  &ensp;&ensp;— Успешно выполнил перенос без простоев и в полном соответствии с требованиями 152-ФЗ.
+- Привёл сервис к stateless-архитектуре, что позволило подключить балансировщик нагрузки и горизонтально масштабировать систему.  
+  &ensp;&ensp;— Пропускная способность выросла с 300 до 2500 запросов в секунду.
+- Настроил сервис Centrifugo для корректной работы WebSocket-соединений через балансировщик.  
+  &ensp;&ensp;— Обеспечил стабильную доставку real-time уведомлений для 10 000+ активных пользователей.
 
-\- yandex cloud
+### Старший IT-специалист  
+**ИП Хохриков**, Полный день, Апрель 2012 – Март 2022
 
-\- linux (ubuntu)
+- Разработал и внедрил клиент-серверные десктоп-приложения для управления и доставки цифровых продуктов через интернет, что:
+  &ensp;&ensp;— Автоматизировал 70% процесса доставки (время от оплаты до получения сократилось с нескольких недель до 1 дня);  
+  &ensp;&ensp;— Позволило перейти на предоплатную систему расчётов, повысив конверсию на 25% и полностью устранив просрочки по оплате;  
+  &ensp;&ensp;— Исключило необходимость найма дополнительных сотрудников в пиковые периоды (например, при квартальных обновлениях), сэкономив ~300 000 ₽ в год;  
+  &ensp;&ensp;— Расширило географию работы компании с 2 до 40+ регионов;  
+  &ensp;&ensp;— Работа через интернет-канал сократила транспортные и логистические расходы на 90%, сохранив бюджет и высвободив ~200 часов в квартал рабочего времени сотрудников.
+- Оказывал техническую (а по отзывам — «бонусом психологическую» 🙂) поддержку.  
+  &ensp;&ensp;— Уровень удовлетворённости клиентов (NPS) вырос с 42 до 86.
 
-\- docker swarm
-
-\- mariadb
-
-\- postgres
-
-\- redis
-
-\- kafka
-
-\- arangodb
-
-\- clickhouse+otel+fluent+grafana (experimentally for collecting logs, metrics, traces)
-
-\- centrifugo
-
-thinking through the stages of dividing the monolith into microservices, adjusting the application to stateless requirements.
-
-In general, responsibilities for organizing and implementing the full life cycle of the application (planning, design, development, sometimes testing, launch), in addition to collecting feedback from end users.
-
-also a serious problem of memory leak was solved using a profiler, which saved decent financial resources on infrastructure.
-
-in June 2023, I got to develop the "directories" microservice in a logistics service. here I got acquainted with the asynchronous-event architecture based on kafka, got acquainted with graphql in more detail. Within six months, the following was implemented:
-
-\- the planned functionality of the reference microservice;
-
-\- a service for calculating the cost of orders using pre-defined formulas was added to the order microservice (for this, the experience of using google/cel-go libraries was studied, applied and documented).
-
-\- adjustments were made to the main module for calculating the cost of transportation, taking into account the update of the order structure.
-
-\- while there was a probationary period, I "slightly" refactored the code :).
-
-\- during the work, a number of problems were solved on parallel services maintained by the company.
-
-the main part of the service architecture was built on internal self-written libraries.
-
-in the spring of 2025, I began to look for ready-made tools oriented towards the asynchronous-event architecture, found the library github.com/ThreeDotsLabs/watermill. in it I took the implementation of the forwarder idea (forwarding events first to the database, and then to the data bus itself, which increases the fault tolerance of the service). I connected nats jetstream as a data bus. I used gin as a router, because I didn’t bother with adapting it to something more lightweight.
-
-at the moment I’m looking at the tech lead direction. but I still have to work and work in this direction.
-
-*   🌍  I'm based in RU. Blagoveschensk
-*   🖥️  See my portfolio at [GitHub](http://github.com/AleksandrMac)
-*   ✉️  You can contact me at [makalov.alex@yandex.ru](mailto:makalov.alex@yandex.ru)
-*   🧠  I'm currently learning watermill, nats, ai, chatbot
-*   👥  I'm looking to collaborate on any project
-*   💬  Ask me about construction, finance, psychology, human behavior
+*   🌍  Я нахожусь в РФ. Благовещенск, Амурская область
+*   🖥️  Моё портфолио [GitHub](http://github.com/AleksandrMac)
+*   ✉️  Вы можете связать со мной [makalov.alex@yandex.ru](mailto:makalov.alex@yandex.ru), [telegram](https://t.me/monkey28)
+*   🧠  В настоящий момент изучаю watermill, nats, ai, chatbot
+*   👥  Рассматриваю все интересные предложения о сотрудничестве
+*   💬  Так же люблю обсуждать тему строительства, финансов, психологии поведения людей
